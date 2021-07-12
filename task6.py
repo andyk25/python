@@ -1,9 +1,22 @@
-# задача 6
-a = int(input("введите результат в первый день"))
-b = int(input("введите нужный результат "))       
-days = 1
-while a < b :
-    a += a/10
-    days += 1
-    print(a)
-print(f" на {days}-й день спортсмен достиг результата — не менее {b} км.")
+# урок 2 задача 6
+goods = []
+title = "non empty"
+while True:
+    title = input("Введите название :")
+    price = input("Введите цену :")
+    numberof = input("Введите количество :")
+    unit = input("Введите eдиницу измерения :")
+    if title =="" or price =="" or numberof == "" or unit == "": break
+    goods.append(({'название':title},
+    {'цена':price},
+    {'количество':numberof},
+    {'единицы':unit}))
+results = {}
+
+for good in goods:
+    for elm in good:
+        for key,val in elm.items():
+            if results.get(key) :  results[key] = results[key] + [val]
+            else: results[key] = [val]
+for key,val in results.items():
+    print(key,*set(val))

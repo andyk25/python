@@ -1,4 +1,3 @@
-# задача 4
-str = input("введите целое положительное число : ")
-maximum = max(list(str))
-print(f"максимальная цифра равна : {maximum}")
+# урок 2 задача 4
+mylist=list(x[0:10] for x in input().split())
+print (*mylist,sep = '\n')

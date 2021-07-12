@@ -1,10 +1,12 @@
-# задача 5
-vyruchka = int(input("введите выручку : "))
-izderzhki = int(input("введите издержки : "))
-if vyruchka > izderzhki :
-    print("фирма работает c прибылью ")
-    print(f"рентабельность выручки : {(vyruchka - izderzhki) / vyruchka}")
-    empls = int(input("сколько сотрудников работает на фирме ? "))
-    print(f"прибыль фирмы в расчете на одного сотрудника : {(vyruchka - izderzhki) / empls}")
-else :
-    print("фирма работает в убыток")
+# урок 2 задача 5
+rating = [7, 5, 3, 3, 2]
+num = 1
+while num != -1:
+    num = int(input("Введите натуральное число :"))
+    for indx, elm in enumerate(rating):
+        if num > elm:
+            rating.insert(indx,num)
+            break
+    else : rating.append(num)
+    if num < 0 : break
+    print(*rating,sep = ',')

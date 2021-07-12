@@ -1,14 +1,12 @@
-# задача 1
-num1, num2 = 10, 2
-str1, str2 = 'десять', 'два'
-print("создаем переменные и выводим их на экран")
-print(num1, num2, str1, str2)
-print()
-num1 = int(input("введите 1е число "))
-num2 = int(input("введите 2е число "))
-str1 = input("введите 1е слово ")
-str2 = input("введите 2е слово ")
-print('1е число = ', num1)
-print('2е число = ', num2)
-print('1е слово = ', str1)
-print('2е слово = ', str2)
+mylist = []
+mylist.append('a')
+mylist.append(5)
+mylist.append(3.5)
+mylist.append(b'46')
+mylist.append(False)
+mylist.append(complex(3, 5))
+mylist.append((3, 5, 6, 7))
+mylist.append([33, 55, 16, 8])
+mylist.append({34, 55, 66, 87})
+for i in mylist:
+    print(type(i))
