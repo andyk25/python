@@ -1,0 +1,5 @@
+first str
+second str 2
+third str tr 3
+another str an n 4
+finish str fn end stop 5
