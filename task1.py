@@ -8,4 +8,4 @@ def raschet_zp(work_time, work_stavka, work_prem):
 
 
 script_name, work1_time, work1_stavka, work1_prem = argv
-print(raschet_zp(int(work1_time), int(work1_stavka), int(work1_prem)))
+print(raschet_zp(float(work1_time), float (work1_stavka), float (work1_prem)))
